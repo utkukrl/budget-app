@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bütçe Programı</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <p id="error_msg"></p>
+            <div class="title">
+                <h1 class="title">
+                     Ana Sayfa <a href="#"></a>
+                </h1>
+            </div>
+            <h3>Yeni Giriş</h3>
+            <form id="form">
+                <div class="form-control">
+                    <input 
+                    type="text"
+                    id="text"
+                    onfocus="this.value=''"
+                    placeholder="Başlığı Girin... "
+                    />
+                </div>
+                <div class="form-control">
+                    <input 
+                    type="number"
+                    id="amount"
+                    onfocus="this.value=''"
+                    placeholder="Değeri Girin... "
+                    />
+                </div>
+                <button class="button">İşlemi Ekle</button>
+            </form>
+            <br>
+            <div class="income-expense">
+                <div class="bg-dark">
+                    <h4>Kar</h4>
+                    <div class="income" id="income">₺0.00</div>
+                </div>
+                <div class="bg-dark">
+                    <h4>Zarar</h4>
+                    <div class="expense" id="expense">₺0.00</div>
+                </div>
+                <div class="bg-dark">
+                    <h4>Bakiye</h4>
+                    <div id="balance">₺0.00</div>
+                </div>
+            </div>
+            <h3>Geçmiş</h3>
+            <utl class="list" id="list"></utl>
+        </div>
+    </div> 
+    <script src="app.js"></script>
+</body>
+</html>
